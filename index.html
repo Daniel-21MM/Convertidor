@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+   <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>    
+    <!--Inicio del main-->
+    <main>
+          <!--Parte del NAVBAR-->
+       <header>
+        <div class="nav-container">
+            <div class="nav-columnas">
+                <div class="nav-titulo">
+                    <h1>Convertidor de texto a  código Morse</h1>
+                </div>
+                <div class="nav-boton">
+                    <button id="toggle" class="btn-descifrar" onclick="toggle()">Descifrar mensaje</button>
+                    <a href="equipo.html">Sobre el equipo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Fin del NAVBAR-->
+        <div class="container-main">
+
+            <div class="entrada">
+                <b>Entrada</b><br>
+                <textarea id="input" class="txt_Area1" placeholder="Escribe un mensaje..."></textarea>
+            </div>
+
+            <div class="btnconver">
+                <button id="convert" class="btn-convertir" onclick="text2morse()">Convertir a Código Morse</button>
+            </div>
+
+            <div class="salida">
+                <b>Salida</b><br>
+                <textarea id="output" class="txt_Area2"></textarea>
+            </div>
+
+        </div>
+       <!-- Seccion del informacion y la imagen-->
+        <div class="info">
+          <div class="container-info">
+            <div>
+                <h1>¿Que es el código Morse?</h1>
+                <p>El código Morse es un sistema de codificación de caracteres que permite que sus usuarios
+                     puedan enviar mensajes utilizando 
+                    pulsaciones eléctricas cortas o largas, o dicho de otro modo, en forma de puntos y rayas.
+                    El código Morse es un método utilizado en telecomunicaciones para codificar caracteres de texto como secuencias 
+                    estandarizadas de dos duraciones de señal diferentes, llamadas puntos y rayas.</p>
+
+                    <h1>¿Quien invento el código Morse?</h1>
+                    <p>Samuel F. B. Morse y su asistente, Alfred Vail, son conocidos como los inventores del código Morse. Este sistema 
+                        se desarrolló alrededor de 1830 y fue evolucionando en la década siguiente.</p>
+                        
+                        <h1>¿Cuándo se patentó el código Morse?</h1>
+                        <p>Samuel Morse recibió la patente estadounidense, US1647A, para señales telegráficas de puntos y rayas el 20 de junio de 1840.
+                             Por otro lado, algunas fuentes afirman que Samuel Morse recibió una patente emitida por el sultán 
+                             otomano Abdulmejid I para el código Morse. Sin embargo, según las memorias de Cyrus Hamlin y el obituario de The New York Times publicado el 3 de abril de 1872, Samuel Morse no recibió una patente, sino una orden del Imperio Otomano, la Orden de la Gloria.</p>
+            </div>
+
+            <div class="container-img">
+                <div class="imagen">
+                    <h1>Alfabeto Morse</h1>
+                    <img src="codigo morse.jpg" alt="">
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <!--Fin de la informacion y de la imagen-->
+  
+      <!--Inicio del footer-->  
+        <footer>
+            <div class="container-footer">
+                <p>Todos los derechos reservados 2022 | <b>Daniel Mendez Mendez</b></p>
+            </div>
+        </footer>
+      <!--Fin del footer-->  
+
+        
+    </main>
+    <!--Fin del main-->
+    <script src="main.js"></script>
+
+
+
+
+</body>
+
+
+</html>
